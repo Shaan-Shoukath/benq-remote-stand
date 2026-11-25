@@ -25,9 +25,18 @@ For an offline view of all renders, open [`out/previews/gallery.html`](out/previ
 
 ## Real-life print
 
-V2 Monolith dock printed in black, holding the RC-0013 remote on a desk next to the monitor stand:
+V2 Monolith dock printed in Numaker PLA+ (black), holding the RC-0013 remote on a desk next to the monitor stand:
 
 <img src="photos/v2_monolith_dock_real.jpg" alt="Printed V2 Monolith dock holding the BenQ RC-0013 remote" width="400">
+
+| Design | Status |
+|---|---|
+| V2 · Monolith | **Printed and tested** in Numaker PLA+. The current `remote_dims.scad` values (100 × 45.8 × 10.2 mm remote, `clearance = 1.2`, giving a 48.2 × 12.6 mm pocket) give an easy drop-in fit with a little play. |
+| V1, V3–V7, fit-test ring | Not printed yet. They use the same dimensions, so they should fit, but nobody has confirmed it. |
+
+### Contributing
+
+If you print any of these, please share how it went. Open an issue or a pull request with a photo, your printer, filament and slicer settings, and how the remote fit (tight, good or loose, and any `clearance` change you made). Fixes and new designs are welcome too. Add photos to [`photos/`](photos) as `<design>_<your-name>.jpg`.
 
 ## Compatible monitors
 
