@@ -23,6 +23,12 @@ The grey ghost in each render is the remote. It shows up in the OpenSCAD preview
 
 For an offline view of all renders, open [`out/previews/gallery.html`](out/previews/gallery.html) in a browser.
 
+## Real-life print
+
+V2 Monolith dock printed in black, holding the RC-0013 remote on a desk next to the monitor stand:
+
+<img src="photos/v2_monolith_dock_real.jpg" alt="Printed V2 Monolith dock holding the BenQ RC-0013 remote" width="400">
+
 ## Compatible monitors
 
 BenQ uses the same RC-0013 remote across several MOBIUZ monitors, so every design here fits all of them. Each model below lists "Remote Control (RC-0013, CR2032)" in the box contents of its BenQ user manual:
@@ -107,6 +113,7 @@ v1 … v7_*.scad            the seven stand designs
 fit_test.scad             fit-test ring
 out/*.stl, out/*.3mf      ready-to-print exports
 out/previews/             renders + gallery.html
+photos/                   real-life photos of printed stands
 benq-remote-stands.zip    everything above in one download
 ```
 
