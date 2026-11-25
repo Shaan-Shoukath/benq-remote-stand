@@ -1,6 +1,6 @@
-# BenQ EX271Q Remote Stands
+# BenQ RC-0013 Remote Stands (EX271Q, EX2710U, EX3210U and more)
 
-Parametric, 3D-printable OpenSCAD stands for the **BenQ RC-0013** remote that ships with the **EX271Q** monitor.
+Parametric, 3D-printable OpenSCAD stands for the **BenQ RC-0013** remote. It ships with the **EX271Q** and several other BenQ MOBIUZ monitors (see [Compatible monitors](#compatible-monitors)).
 There are seven designs: desk docks, a monitor-neck clip and an under-desk holster. Each one comes as ready-to-print STL and 3MF files.
 
 All of them read the remote's size from one file, [`remote_dims.scad`](remote_dims.scad). Change a number there and re-export.
@@ -22,6 +22,23 @@ The grey ghost in each render is the remote. It shows up in the OpenSCAD preview
 | Minimal slab with a leaning slot | Round disc with an inlaid ring | Smooth dome, deepest grip | Optional ~10 min print to check the fit |
 
 For an offline view of all renders, open [`out/previews/gallery.html`](out/previews/gallery.html) in a browser.
+
+## Compatible monitors
+
+BenQ uses the same RC-0013 remote across several MOBIUZ monitors, so every design here fits all of them. Each model below lists "Remote Control (RC-0013, CR2032)" in the box contents of its BenQ user manual:
+
+| Monitor | Size |
+|---|---|
+| EX271Q | 27" QHD |
+| EX271U | 27" 4K |
+| EX2710U | 27" 4K |
+| EX2710R | 27" QHD curved |
+| EX3210U | 32" 4K |
+| EX3210R | 32" QHD curved |
+| EX321UX | 32" 4K Mini LED |
+| EX381U | 38" 4K |
+
+Regional variants with an `E` suffix (EX2710UE, EX3210UE, EX2710RE, EX3210RE) share the same manuals and remote. If your monitor isn't listed, check its manual for "RC-0013". For the V3 neck clip, measure your own monitor's neck (see [Customising](#customising-and-exporting)), since stands differ between models.
 
 ## Quick start
 
@@ -78,7 +95,7 @@ openscad -o out/v2_monolith_dock.3mf v2_monolith_dock.scad
 Useful parameters:
 
 - `remote_dims.scad`: `remote_l`, `remote_w`, `remote_t`, `remote_r`, `clearance`. Every design picks these up.
-- `v3_neck_clip.scad`: `neck_w`, `neck_d`, `neck_clear`. The EX271Q's neck size isn't published, so these are placeholders. Measure your own.
+- `v3_neck_clip.scad`: `neck_w`, `neck_d`, `neck_clear`. BenQ doesn't publish neck sizes for any of these monitors, so these are placeholders. Measure your own.
 - `v4_desk_pocket.scad`: set `print_flat = false` to preview it the way it mounts.
 - `lean` in V5–V7 sets the tilt angle.
 

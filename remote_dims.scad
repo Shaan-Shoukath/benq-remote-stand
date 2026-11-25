@@ -1,5 +1,7 @@
 // =====================================================================
-//  BenQ EX271Q remote (RC-0013, CR2032) — shared dimensions + helpers
+//  BenQ RC-0013 remote (CR2032) — shared dimensions + helpers
+//  Same remote on EX271Q, EX271U, EX2710U, EX2710R, EX3210U, EX3210R,
+//  EX321UX and EX381U (per BenQ's user manuals)
 //  Every stand design includes this file. Before a full print, print
 //  fit_test.scad (about 10 min) and slide the remote through it. If it's
 //  tight or loose, adjust remote_w / remote_t (or clearance) here and
